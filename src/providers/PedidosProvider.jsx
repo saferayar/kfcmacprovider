@@ -11,7 +11,7 @@ function PedidosProvider({children}) {
 
   const removePedido = (pedido)=>{
     //TODO: Si quiero eliminar en un origen externo, llamo a api para eliminar y actualizo el state
-    //TODO: 2 Eliminar con una key unica
+   setPedidos(pedidos.filter(p=> p.id !== pedido.id));
   }
 
   const loadPedidos =()=>{
